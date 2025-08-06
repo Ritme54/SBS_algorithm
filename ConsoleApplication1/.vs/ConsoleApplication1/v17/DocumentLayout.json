@@ -7,10 +7,13 @@
       "RelativeMoniker": "D:0:0:{3891461D-A845-4B44-B814-496226A83557}|ConsoleApplication1.vcxproj|solutionrelative:program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{99766187-37C6-4A74-A4F2-20F7C40879EB}|..\\Class5th(Insert Sort)\\Class5th(Insert Sort).vcxproj|C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class5th(Insert Sort)\\Class5th(Insert Sort).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+      "AbsoluteMoniker": "D:0:0:{B03199F9-ADCE-4501-A6DB-80FE142FAB47}|..\\Class6th(\uC720\uD074\uB9AC\uB4DC \uD638\uC81C\uBC95)\\Class6th(\uC720\uD074\uB9AC\uB4DC \uD638\uC81C\uBC95).vcxproj|C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class6th(\uC720\uD074\uB9AC\uB4DC \uD638\uC81C\uBC95)\\Class6th(\uC720\uD074\uB9AC\uB4DC \uD638\uC81C\uBC95).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{0AD2EEB0-C848-47C7-A518-67B4500B1473}|..\\Class3th(\uC54C\uACE0\uB9AC\uC998\\Class3th(\uC54C\uACE0\uB9AC\uC998.vcxproj|C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class3th(\uC54C\uACE0\uB9AC\uC998\\Class3th(\uC54C\uACE0\uB9AC\uC998.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99766187-37C6-4A74-A4F2-20F7C40879EB}|..\\Class5th(Insert Sort)\\Class5th(Insert Sort).vcxproj|C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class5th(Insert Sort)\\Class5th(Insert Sort).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{AD7A5051-AB78-435C-A812-4DC720C3639B}|..\\Class4th(Select Sort)\\Class4th(Select Sort).vcxproj|C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class4th(Select Sort)\\Class4th(Select Sort).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
@@ -23,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -32,6 +35,18 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Class6th(\uC720\uD074\uB9AC\uB4DC \uD638\uC81C\uBC95).cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class6th(\uC720\uD074\uB9AC\uB4DC \uD638\uC81C\uBC95)\\Class6th(\uC720\uD074\uB9AC\uB4DC \uD638\uC81C\uBC95).cpp",
+              "RelativeDocumentMoniker": "..\\Class6th(\uC720\uD074\uB9AC\uB4DC \uD638\uC81C\uBC95)\\Class6th(\uC720\uD074\uB9AC\uB4DC \uD638\uC81C\uBC95).cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class6th(\uC720\uD074\uB9AC\uB4DC \uD638\uC81C\uBC95)\\Class6th(\uC720\uD074\uB9AC\uB4DC \uD638\uC81C\uBC95).cpp",
+              "RelativeToolTip": "..\\Class6th(\uC720\uD074\uB9AC\uB4DC \uD638\uC81C\uBC95)\\Class6th(\uC720\uD074\uB9AC\uB4DC \uD638\uC81C\uBC95).cpp",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAD8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-06T05:14:21.761Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
               "Title": "Class5th(Insert Sort).cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class5th(Insert Sort)\\Class5th(Insert Sort).cpp",
               "RelativeDocumentMoniker": "..\\Class5th(Insert Sort)\\Class5th(Insert Sort).cpp",
@@ -39,8 +54,7 @@
               "RelativeToolTip": "..\\Class5th(Insert Sort)\\Class5th(Insert Sort).cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACYAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-05T06:37:12.647Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T06:37:12.647Z"
             },
             {
               "$type": "Document",
@@ -50,14 +64,13 @@
               "RelativeDocumentMoniker": "..\\Class3th(\uC54C\uACE0\uB9AC\uC998\\Class3th(\uC54C\uACE0\uB9AC\uC998.cpp",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class3th(\uC54C\uACE0\uB9AC\uC998\\Class3th(\uC54C\uACE0\uB9AC\uC998.cpp",
               "RelativeToolTip": "..\\Class3th(\uC54C\uACE0\uB9AC\uC998\\Class3th(\uC54C\uACE0\uB9AC\uC998.cpp",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABMAAAAmAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-05T04:08:43.939Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T04:08:43.939Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Class4th(Select Sort).cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class4th(Select Sort)\\Class4th(Select Sort).cpp",
               "RelativeDocumentMoniker": "..\\Class4th(Select Sort)\\Class4th(Select Sort).cpp",
@@ -65,8 +78,7 @@
               "RelativeToolTip": "..\\Class4th(Select Sort)\\Class4th(Select Sort).cpp",
               "ViewState": "AgIAAAgAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-05T05:14:51.546Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-05T05:14:51.546Z"
             },
             {
               "$type": "Document",
@@ -76,7 +88,7 @@
               "RelativeDocumentMoniker": "program.cpp",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\ConsoleApplication1\\program.cpp",
               "RelativeToolTip": "program.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACQAAAAZAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-08-05T04:07:51.397Z",
               "EditorCaption": ""
