@@ -1,52 +1,92 @@
 ﻿#include <iostream>
+#include <vector>
+#include <algorithm>
 
 using namespace std;
 
-int box(int list[], int left, int right, int A)
+
+//int con(int list[], int n)
+//{
+//
+//
+//	for (int i = 0; i < n - 1; i++) {
+//		for (int j = 0; j < n - i - 1; j++) {
+//			if (list[j] > list[j + 1]) {
+//				//swap
+//				int temp = list[j];
+//				list[j] = list[j + 1];
+//				list[j + 1] = temp;
+//			}
+//		}
+//	}
+//	for (int i = 0; i < n; i++) {
+//		cout << list[i] << " ";
+//	}
+//
+//	return 0;
+//}
+
+int box(int n)
 {
-
-	if (left > right)
+	int k = 0;
+	for (int i = 1; i < n + 1; i++)
 	{
-		cout << A << "is not here" << endl;
-		return -1;
+		if (n % i==0)
+		{
+			for (int k = 1; k < n % i; k++)
+			{
+
+			}
+
+				cout << i << " ";
+		}
 	}
 
-	int mid = (left + right) / 2;
-
-	if (list[mid] == A)
-	{
-		cout << "find " << list[mid] << endl;
-		return A;
-	}
-	else if (list[mid] < A)
-	{
-	
-		int result = box(list, mid+1, right, A);
-		return result;
-
-	}
-	else
-	{
-		
-		int result = box(list, left, mid-1, A);
-		return result;
-	}
-
-
+	return 0;
 }
+
 
 
 int main()
 {
-#pragma region 이분 탐색
-	//탐색 범위를 반으로 나누어 찾는값을 포함하는 범위를
-	//좁혀나가는 방식으로 동작하는 알고리즘.
-	//시간 복잡도 0(log N)
-	//구하고자 하는 값의 크기와 중간값 크기 비교
-	int list[] = { 2, 4, 6, 8, 10, 12 };
-	int size = sizeof(list) / sizeof(list[0]);
-	cout << box(list, 0, size - 1, 8) << endl;
-	
+
+#pragma region 개수 정렬
+	////데이터의 값을 비교하지 않고 각 원소에 데이터가 몇 개 있는 지 개수를 세어 저장한 다음 정렬하는 알고리즘
+	//
+	//int list[] = { 1, 3, 2, 2, 4, 5, 1, 2 };
+	//int n = sizeof(list) / sizeof(list[0]);
+	//
+	//con(list, n);
+	//
+	//
+	//for (int i = 0; i < n - 1; i++)
+	//{
+	//	int cnt = count(list, list + n, k)
+	//}
+
+	box(7);
+
+	int A = 6;
+	int B = 2;
+	int C = A / B;
+	//cout << C << " ";
+
+
+
+
+
+#pragma endregion
+
+
+#pragma region 코딩 과제,완전수 만들어보기
+	//완전수 구하는 함수 만들기
+	//완전수= N의 진약수를 모두 더했을때 N이 되는 수
+	//약수를 구하는 코드
+
+
+
+
+
 
 #pragma endregion
 
