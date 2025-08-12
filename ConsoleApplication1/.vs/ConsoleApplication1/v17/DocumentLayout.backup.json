@@ -7,6 +7,15 @@
       "RelativeMoniker": "D:0:0:{3891461D-A845-4B44-B814-496226A83557}|ConsoleApplication1.vcxproj|solutionrelative:program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{EA62B5B2-F123-4815-B20C-29DB2BF4686F}|..\\class10\\class10.vcxproj|C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\class10\\class10th.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{787ECC3B-6503-4814-9A75-37C0990A6007}|..\\Class12th(Merge Slot)\\Class12th(Merge Slot).vcxproj|C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class12th(Merge Slot)\\Class12th(Merge Slot).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1787A85-F6F2-4BE4-A3AA-1B946A14489C}|..\\Class11th-1\\Class11th-1.vcxproj|C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class11th-1\\Class11th-1.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B03199F9-ADCE-4501-A6DB-80FE142FAB47}|..\\Class6th(\uC720\uD074\uB9AC\uB4DC \uD638\uC81C\uBC95)\\Class6th(\uC720\uD074\uB9AC\uB4DC \uD638\uC81C\uBC95).vcxproj|C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class6th(\uC720\uD074\uB9AC\uB4DC \uD638\uC81C\uBC95)\\Class6th(\uC720\uD074\uB9AC\uB4DC \uD638\uC81C\uBC95).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     },
     {
@@ -35,7 +44,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 8,
+          "SelectedChildIndex": 11,
           "Children": [
             {
               "$type": "Bookmark",
@@ -43,7 +52,46 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Class12th(Merge Slot).cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class12th(Merge Slot)\\Class12th(Merge Slot).cpp",
+              "RelativeDocumentMoniker": "..\\Class12th(Merge Slot)\\Class12th(Merge Slot).cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class12th(Merge Slot)\\Class12th(Merge Slot).cpp",
+              "RelativeToolTip": "..\\Class12th(Merge Slot)\\Class12th(Merge Slot).cpp",
+              "ViewState": "AgIAADEAAAAAAAAAAAAAAEsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-12T05:11:57.468Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "Class11th-1.cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class11th-1\\Class11th-1.cpp",
+              "RelativeDocumentMoniker": "..\\Class11th-1\\Class11th-1.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class11th-1\\Class11th-1.cpp",
+              "RelativeToolTip": "..\\Class11th-1\\Class11th-1.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-12T04:19:15.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "class10th.cpp",
+              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\class10\\class10th.cpp",
+              "RelativeDocumentMoniker": "..\\class10\\class10th.cpp",
+              "ToolTip": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\class10\\class10th.cpp",
+              "RelativeToolTip": "..\\class10\\class10th.cpp",
+              "ViewState": "AgIAABcAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-08-12T04:14:40.693Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "Class3th(\uC54C\uACE0\uB9AC\uC998.cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class3th(\uC54C\uACE0\uB9AC\uC998\\Class3th(\uC54C\uACE0\uB9AC\uC998.cpp",
               "RelativeDocumentMoniker": "..\\Class3th(\uC54C\uACE0\uB9AC\uC998\\Class3th(\uC54C\uACE0\uB9AC\uC998.cpp",
@@ -51,12 +99,11 @@
               "RelativeToolTip": "..\\Class3th(\uC54C\uACE0\uB9AC\uC998\\Class3th(\uC54C\uACE0\uB9AC\uC998.cpp",
               "ViewState": "AgIAABIAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-08T04:18:27.242Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T04:18:27.242Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
               "Title": "Class4th(Select Sort).cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class4th(Select Sort)\\Class4th(Select Sort).cpp",
               "RelativeDocumentMoniker": "..\\Class4th(Select Sort)\\Class4th(Select Sort).cpp",
@@ -64,12 +111,11 @@
               "RelativeToolTip": "..\\Class4th(Select Sort)\\Class4th(Select Sort).cpp",
               "ViewState": "AgIAABUAAAAAAAAAAAAIwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-08T04:18:08.707Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T04:18:08.707Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 10,
               "Title": "Class5th(Insert Sort).cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class5th(Insert Sort)\\Class5th(Insert Sort).cpp",
               "RelativeDocumentMoniker": "..\\Class5th(Insert Sort)\\Class5th(Insert Sort).cpp",
@@ -77,12 +123,11 @@
               "RelativeToolTip": "..\\Class5th(Insert Sort)\\Class5th(Insert Sort).cpp",
               "ViewState": "AgIAAAwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-08T04:17:48.907Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T04:17:48.907Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "Class6th(\uC720\uD074\uB9AC\uB4DC \uD638\uC81C\uBC95).cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class6th(\uC720\uD074\uB9AC\uB4DC \uD638\uC81C\uBC95)\\Class6th(\uC720\uD074\uB9AC\uB4DC \uD638\uC81C\uBC95).cpp",
               "RelativeDocumentMoniker": "..\\Class6th(\uC720\uD074\uB9AC\uB4DC \uD638\uC81C\uBC95)\\Class6th(\uC720\uD074\uB9AC\uB4DC \uD638\uC81C\uBC95).cpp",
@@ -90,12 +135,11 @@
               "RelativeToolTip": "..\\Class6th(\uC720\uD074\uB9AC\uB4DC \uD638\uC81C\uBC95)\\Class6th(\uC720\uD074\uB9AC\uB4DC \uD638\uC81C\uBC95).cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-08T04:17:44.987Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T04:17:44.987Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 8,
               "Title": "Class7th (Sieve of Eratosthenes).cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class7th (Sieve of Eratosthenes)\\Class7th (Sieve of Eratosthenes).cpp",
               "RelativeDocumentMoniker": "..\\Class7th (Sieve of Eratosthenes)\\Class7th (Sieve of Eratosthenes).cpp",
@@ -103,12 +147,11 @@
               "RelativeToolTip": "..\\Class7th (Sieve of Eratosthenes)\\Class7th (Sieve of Eratosthenes).cpp",
               "ViewState": "AgIAADMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-08T04:17:36.01Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T04:17:36.01Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Class9th.cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class9th(Bianry Serch)\\Class9th.cpp",
               "RelativeDocumentMoniker": "..\\Class9th(Bianry Serch)\\Class9th.cpp",
@@ -116,12 +159,11 @@
               "RelativeToolTip": "..\\Class9th(Bianry Serch)\\Class9th.cpp",
               "ViewState": "AgIAACEAAAAAAAAAAAAAwDwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-08T04:06:56.024Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-08T04:06:56.024Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Class8th(Divide and conquer).cpp",
               "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class8th(Divide and conquer)\\Class8th(Divide and conquer).cpp",
               "RelativeDocumentMoniker": "..\\Class8th(Divide and conquer)\\Class8th(Divide and conquer).cpp",
@@ -129,8 +171,7 @@
               "RelativeToolTip": "..\\Class8th(Divide and conquer)\\Class8th(Divide and conquer).cpp",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-07T05:28:50.803Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-08-07T05:28:50.803Z"
             },
             {
               "$type": "Document",
@@ -140,7 +181,7 @@
               "RelativeDocumentMoniker": "program.cpp",
               "ToolTip": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\ConsoleApplication1\\program.cpp",
               "RelativeToolTip": "program.cpp",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAAwFAAAAAeAAAAAAAAAA==",
+              "ViewState": "AgIAACAAAAAAAAAAAAAAADEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
               "WhenOpened": "2025-08-07T04:24:20.121Z",
               "EditorCaption": ""

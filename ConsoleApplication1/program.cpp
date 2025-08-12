@@ -4,97 +4,57 @@
 
 using namespace std;
 
-
-//int con(int list[], int n)
+//int fibonacci(int n)
 //{
+//   // Base cases
+//   if (n == 0) return 0;
+//   if (n == 1) return 1;
 //
-//
-//	for (int i = 0; i < n - 1; i++) {
-//		for (int j = 0; j < n - i - 1; j++) {
-//			if (list[j] > list[j + 1]) {
-//				//swap
-//				int temp = list[j];
-//				list[j] = list[j + 1];
-//				list[j + 1] = temp;
-//			}
-//		}
-//	}
-//	for (int i = 0; i < n; i++) {
-//		cout << list[i] << " ";
-//	}
-//
-//	return 0;
+//   // Recursive calculation
+//   return fibonacci(n - 1) + fibonacci(n - 2);
 //}
 
-int box(int n)
+int fibonacci(int n, int list[])
 {
-	int k = 0;
-	for (int i = 1; i < n + 1; i++)
+
+	if (n == 0) return 0;
+	if (n == 1) return 1;
+
+	if (list[n] != -1)
 	{
-		if (n % i==0)
-		{
-			for (int k = 1; k < n % i; k++)
-			{
-
-			}
-
-				cout << i << " ";
-		}
+		return list[n];
 	}
+//	list[n] = list[n - 1] + list[n - 2];
 
-	return 0;
+
+	list[n] = fibonacci(n - 1, list) + fibonacci(n - 2, list);
+
+	return list[n];
 }
-
 
 
 int main()
 {
 
-#pragma region 개수 정렬
-	////데이터의 값을 비교하지 않고 각 원소에 데이터가 몇 개 있는 지 개수를 세어 저장한 다음 정렬하는 알고리즘
-	//
-	//int list[] = { 1, 3, 2, 2, 4, 5, 1, 2 };
-	//int n = sizeof(list) / sizeof(list[0]);
-	//
-	//con(list, n);
-	//
-	//
-	//for (int i = 0; i < n - 1; i++)
-	//{
-	//	int cnt = count(list, list + n, k)
-	//}
+#pragma region 동적 계획법
+   // 특정 범위까지의 값을 구하기 위해 그것과 다른 범위까지의 값을 이용하여 효율적으로 값을 구하는 알고리즘이다.
 
-	box(7);
-
-	int A = 6;
-	int B = 2;
-	int C = A / B;
-	//cout << C << " ";
+   //겹치는 부분 문제(Overlapping Subproblems)
+   //동일한 작은 문제들이 반복하여 나타나는 것
+   //최적 부분 구조(Optimal Substructure)
+   //부분 문제의 최적 결과 값을 사용하여 전체 문제의 최적의 결과를 낼 수 있는 경우를 의미
+	// 메모이제이션(Memoization)
+	//프로그램이 동일한 계산을 반복해야 할 때, 이전에 계산한 값을 메로리에 저장함으로서 동일한 계산을 반복 수해아는 작업을 제거하여 프로그램이 실행 속도를 향상시키는 방법
 
 
-
-
+   int n = 8; // Example input
+   int list[50];
+   for (int i = 0; i < 50; ++i) {
+	   list[i] = -1; // 배열의 모든 요소를 -1로 초기화합니다.
+   }
+   cout << n << "->" << fibonacci(n, list) << endl;
 
 #pragma endregion
 
-
-#pragma region 코딩 과제,완전수 만들어보기
-	//완전수 구하는 함수 만들기
-	//완전수= N의 진약수를 모두 더했을때 N이 되는 수
-	//약수를 구하는 코드
-
-
-
-
-
-
-#pragma endregion
-
-
-
-
-
-	return 0;
+   return 0;
 }
-
-
