@@ -2,88 +2,90 @@
 #include <vector>
 #include <queue>
 
-#define SIZE 8
+#define SIZE 7
+
 
 using namespace std;
 
-class Graph
+
+int parent[SIZE];
+
+
+int find(int x)
 {
-public:
-	Graph()
+	//배열의 인덱스와 값이 같다면 root node를 발견
+	if (parent[x]==x)
 	{
-		for (int i = 0; i < SIZE; i++)
-		{
-			degree[i] = 0;
-		}
-	}
-	void insert(int vertex, int edge)
+		return x;
+	}	//자기 자신을 부모로 가지면 루트(대표)
+	else
 	{
-	
-		adjacencyList[vertex].push_back(edge);
-		degree[edge]++;
-		cout << vertex << " : " << degree[edge] << endl;
+	//부모 노드의 번호를 전달하면서, root Node를 찾을 때까지 재귀 함수를 호출하여 반복합니다.
+		return parent[x] = find(parent[x]);//경로 압축:한번에 루트로 부모 갱신.
+
 	}
-	//vertex 1에서 dergee 0이 하나 나와야 하는데 안나오는 상태 디버깅 시도할껏
-	//void dag(int start)
-	//{
-	//	if (start < 0 || start >= SIZE)
-	//	{
-	//		return;
-	//	}
-	//
-	//	for (int i = 0; i < SIZE; i++)
-	//	{
-	//		visited[i] = false;
-	//	}
-	//}
-	//
 
+}
+void Union(int x, int y)
+{
 	
-private:
-	int degree[SIZE];
-	bool visited[SIZE];
-	queue<int>queue;
-	vector<int> adjacencyList[SIZE];
-};
+	x = find(x);
+	y = find(y);
+	if (x == y)return;
+	if (x<y)
+	{
+		parent[y] = x;
+	}
+	else
+	{
+		parent[x] = y;
+	}
+	
+}
+bool same(int x, int y)
+{
+	return find(x) == find(y);
 
-
+}
 
 
 int main()
 {
-#pragma region 위상 정렬
-	//병합 그래프에 존재하는 각 정점들의 선행 순서를 지키며, 모든 정점을 차례대로 진행하는 알고리즘 입니다.
-	//사이클이 발생하는 경우 위상 정렬을 수행할 수 없습니다.
 
-	//DAG(Directed Acyclic Graph) : 사이클이 존재하지 않는 그래프
+#pragma region 서로소 집합
+	//서로 공통된 원소를 가지고 있지 않은 두개 이상의 집합을 의미합니다.
 
-	//시간 복잡도 : 0(V+E)
-	//위상 정렬 방법
+	//union(합집합) : 두 집합을 하나로 합치는 연산
+	//find(찾기) : 특정한 원소가 속한 집합이 어떤 집합인지 알려주는 연산이다.
+	// 
+	// 1. 합집합 연산을 확인하여, 서로 연결된 두 노드를 확인합니다.
+		//1) A 와 B의 루트 노드를 A' 와 B'를 각각 찾습니다.
+	//2) A' 와 B'의 부모 노드를 설정합니다.
 
-	//1.진입 차수가 0인 정점을 Queue에 삽입합니다.
+	//2. 모든 합집합 연사를 처리할 때까지 1번 과정을 반복합니다.
+	
+	for (int i = 0; i < SIZE; i++)
+	{
+		parent[i] = i;
+	}
+	
 
-	//2. Queue에서 원소를 꺼내 연결된 모든 간선을 제거합니다.
+	Union(0, 1);
+	Union(0, 2);
+	Union(0, 3);
 
-	//3.간선 제거 이후에 진입 차수가 0이 된 정점을 Queue에 삽입합니다.
+	Union(4, 5);
+	Union(5, 6);
 
-	//4. Queue가 비어있을 때까지 2번, 3번 작업을 반복합니다.
+	cout << "same : " << same(1, 3) << endl;
+	cout << "same : " << same(1, 6) << endl;
 
-	Graph graph;
-	graph.insert(1,2);
-	graph.insert(1,5);
-	graph.insert(2,3);
-	graph.insert(3,4);
-	graph.insert(4,6);
-	graph.insert(5,6);
-	graph.insert(6,7);
 
 
 #pragma endregion
 
 
-#pragma region 퇴각 검색(백트래킹 알고리즘) [숙제]
 
-#pragma endregion
 
 
 
