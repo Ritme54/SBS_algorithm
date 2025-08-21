@@ -1,18 +1,7 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\ConsoleApplication1\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{3891461D-A845-4B44-B814-496226A83557}|ConsoleApplication1.vcxproj|C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\ConsoleApplication1\\program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
-      "RelativeMoniker": "D:0:0:{3891461D-A845-4B44-B814-496226A83557}|ConsoleApplication1.vcxproj|solutionrelative:program.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD7A5051-AB78-435C-A812-4DC720C3639B}|..\\Class4th(Select Sort)\\Class4th(Select Sort).vcxproj|C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class4th(Select Sort)\\Class4th(Select Sort).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B5FA953B-BDDC-4A65-80A9-28529C9D543E}|..\\Class18th(Union find)\\Class18th(Union find).vcxproj|C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class18th(Union find)\\Class18th(Union find).cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
-    }
-  ],
+  "Documents": [],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -20,50 +9,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": -1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Class18th(Union find).cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class18th(Union find)\\Class18th(Union find).cpp",
-              "RelativeDocumentMoniker": "..\\Class18th(Union find)\\Class18th(Union find).cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class18th(Union find)\\Class18th(Union find).cpp",
-              "RelativeToolTip": "..\\Class18th(Union find)\\Class18th(Union find).cpp",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAD4AAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-20T06:17:20.135Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "program.cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\ConsoleApplication1\\program.cpp",
-              "RelativeDocumentMoniker": "program.cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\ConsoleApplication1\\program.cpp",
-              "RelativeToolTip": "program.cpp",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAIwG8AAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-20T05:25:28.752Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Class4th(Select Sort).cpp",
-              "DocumentMoniker": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class4th(Select Sort)\\Class4th(Select Sort).cpp",
-              "RelativeDocumentMoniker": "..\\Class4th(Select Sort)\\Class4th(Select Sort).cpp",
-              "ToolTip": "C:\\Users\\Administrator\\Desktop\\sbs-c--\\SBS_algorithm\\Class4th(Select Sort)\\Class4th(Select Sort).cpp",
-              "RelativeToolTip": "..\\Class4th(Select Sort)\\Class4th(Select Sort).cpp",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-08-20T05:25:27.328Z",
-              "EditorCaption": ""
             }
           ]
         }

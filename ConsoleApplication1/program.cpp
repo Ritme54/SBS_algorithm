@@ -3,161 +3,185 @@
 #include <queue>
 #include <algorithm>
 
-#define SIZE 8
+#define SIZE 6
+
+#define INFINITY 1000000
 
 
 
 using namespace std;
+//cosnt long long INFINITY = 1e18
 
-class Kruskal
+class Dijkstra
 {
 private:
-	class Edge
+	int graph[SIZE][SIZE] =
 	{
-	private:
-		int vertexX;
-		int vertexY;
-		int weight;
-	public:
-		Edge(int vertexX, int vertexY, int weight)
-		{
-			this->vertexX = vertexX;
-			this->vertexY = vertexY;
-			this->weight = weight;
-
-		}
-
-		const bool& operator<(const Edge& edge) const
-		{
-
-
-			return weight < edge.weight;
-		}
-
-		const int& X() { return vertexX; }
-		const int& Y() { return vertexY; }
-		const int& W() { return weight; }
-
+		{0,2,5,1, INFINITY, INFINITY},
+		{2,0,3,2, INFINITY, INFINITY},
+		{5,3,0,3, 1,		 5		},
+		{1,2,3,0, 1, INFINITY},
+		{INFINITY,INFINITY,1,1, 0, 2},
+		{INFINITY,INFINITY,5,INFINITY, 2, 0}
 
 	};
-
-	vector<Edge>nodeList;
-
+	bool visited[SIZE];
+	int dist[SIZE];
 	int parent[SIZE];
-	void ufInit()
+	int lastMinIndex_;
+
+	const int& find()
 	{
-		for (int i = 0; i < SIZE; ++i)
+
+		int best = INFINITY;
+		lastMinIndex_ = -1;
+		for (int v = 0; v < SIZE; v++)
 		{
-			parent[i] = i;
-		}
-	}
-	int ufFind(int x)
-	{
-		if (parent[x] == x) return x;
-		return parent[x] = ufFind(parent[x]); // 경로 압축
-	}
-
-	bool ufUnion(int a, int b)
-	{
-		a = ufFind(a);
-		b = ufFind(b);
-		if (a == b) return false; // 같은 집합이면 사이클 발생 → 채택 금지
-
-		return true;
-	}
-
-public:
-	Kruskal()
-	{
-
-	}
-
-	void insert(int vertexX, int vertexY, int weight)
-	{
-		Edge edge(vertexX, vertexY, weight);
-		nodeList.push_back(edge);
-
-
-	}
-
-	void calculate()
-	{
-		sort(nodeList.begin(), nodeList.end());
-
-
-		// 2) 분리 집합 초기화
-		ufInit();
-
-		// 3) 간선을 순회하며 MST 구성
-		vector<Edge> mst;
-		int cost = 0;
-
-		for (int i = 0; i < nodeList.size(); i++)
-		{
-			//cout << nodeList[i].X() << endl;
-			//cout << nodeList[i].Y() << endl;
-			//cout << nodeList[i].W() << endl;			
-
-			int u = nodeList[i].X();
-			int v = nodeList[i].Y();
-			int w = nodeList[i].W();
-
-			// 두 정점이 다른 집합일 때만 간선 채택(사이클 방지)
-			if (ufUnion(u, v))
+			if (!visited[v] && dist[v] < best)
 			{
-				mst.push_back(nodeList[i]);
-				cost += w;
+				best = dist[v];
+				lastMinIndex_ = v;
 			}
 		}
-		cout << "MST 간선 목록 (X - Y : W)\n";
-		for (size_t i = 0; i < mst.size(); ++i)
-		{
-			cout << mst[i].X() << " - " << mst[i].Y() << " : " << mst[i].W() << "\n";
-		}
-		cout << "MST 총 가중치: " << cost << "\n";
-
-	};
-
-
-	int main()
+		return lastMinIndex_;
+	}
+	vector<int> getPath(int s, int t) const
 	{
+		vector<int> path;
+		if (t < 0 || t >= SIZE) return path;
+		if (dist[t] >= INFINITY) return path;
+		for (int cur = t; cur != -1; cur = parent[cur]) path.push_back(cur);
+		reverse(path.begin(), path.end());
+		if (path.empty() || path.front() != s) path.clear();
+		return path;
+	}
 
-#pragma region 최소 신장 트리
-		//그래프의 모든 정점을 포함하면서 사이클이 존재하지 않는 부분 그래프로,
-		// 그래프의 모든 정점을 최소 비용으로 연결하는 트리입니다.
 
-		// 그래프의 정점의 수가n개 일때, 간선의 수는 n-1개 입니다.
 
-		//1. 정렬된 순서에 맞게 그래프에 포함시킵니다.
-		//2. 포함시키기 전에 사이클이 형성되는지 확인합니다.
-		//3.사이클을 형성하는 경우 간선을 포함하지 않습니다.
+public:
+	Dijkstra()
+	{
+		for (int i = 0; i < SIZE; i++)
+		{
+			for (int j = 0; j < SIZE; j++)
+			{
+			//	cout << graph[i][j] << " ";
+			}
 
-		Kruskal kruskal;
+			//cout << endl;
+		}
+		for (int i = 0; i < SIZE; i++)
+		{
+			visited[i] = false;
+		}
+		for (int i = 0; i < SIZE; i++)
+		{
+			dist[i] = INFINITY;
+		}
+		for (int i = 0; i < SIZE; i++)
+		{
+			parent[i] = -1;
+		}
+		lastMinIndex_ = -1;
+	}
+	void update(int start)
+	{
+		for (int i = 0; i < SIZE; i++)
+		{
+			visited[i] = false;
+			dist[i] = INFINITY;
+			parent[i] = -1;
+		}
+		dist[start] = 0;
 
-		kruskal.insert(1, 7, 12);
-		kruskal.insert(4, 7, 13);
+		for (int iter = 0; iter < SIZE; ++iter)
+		{
+			const int& u = find();
+			if (u == -1)
+			{
+				break;
+			}
+			visited[u] = true;
 
-		kruskal.insert(2, 4, 23);
-		kruskal.insert(2, 5, 65);
+			for (int v = 0; v < SIZE; ++v)
+			{
+				if (visited[v])
+				{
+					continue;
+				}
+				if (graph[u][v] == INFINITY)
+				{
+					continue;
+				}
+				if (dist[v] > dist[u] + graph[u][v])
+				{
+					dist[v] = dist[u] + graph[u][v];
+					parent[v] = u;
+				}
+			}
+		}
+		cout << "최단 거리 : " << start << endl;
+		for (int v = 0; v < SIZE; v++)
+		{
+			if (dist[v] >= INFINITY)
+			{
+				cout << "-" << v << "도달 불가" << endl;
+			}
+			else
+			{
+				cout << "-" << v << ":" << dist[v] << endl;
+			}
 
-		kruskal.insert(1, 2, 71);
-		kruskal.insert(5, 7, 79);
 
-		kruskal.insert(1, 4, 30);
-		kruskal.insert(1, 5, 15);
-		kruskal.insert(3, 5, 18);
 
-		kruskal.insert(3, 6, 36);
-		kruskal.insert(5, 6, 44);
+		}
 
-		kruskal.calculate();
+
+
+
+
+		int target = 5;
+		auto path = getPath(start, target);
+		cout << "[경로 " << start << " -> " << target << "] ";
+		if (path.empty()) cout << "도달 불가\n";
+		else
+		{
+			for (int i = 0; i < (int)path.size(); ++i)
+			{
+				if (i) cout << " -> ";
+				cout << path[i];
+			}
+			cout << "\n";
+		}
+	}
+
+};
+
+
+
+int main()
+{
+#pragma region 다익스트라 알고리즘
+	//지작점으로부터 모든 노드까지의 최소 거리를 구해주는 알고리즘
+	//1.거리 배열에서 weight[시작 노드]의 값들로 초기화 합니다.
+	//2. 시작점을 방문 처리합니다.
+	//3.거리 배열에서 최소 비용 노드를 찾고 방문 처리합니다. 단. 이미 방문한 노드는 제외합니다.
+	//4. 최소 비용 노드를 거처갈 지 고민해서 거리 배열을 갱신합니다. 단, 이미 방문한 노드는 제외합니다.
+
+	//5. 모든 노드를 방문할 떄까지 3~4를 반복합니다.
+	//방문하지 않은 노드 중에서 가장 작은 거릴 가진 노드를 방문하고, 그 노드와 연결된 다른 노드까지의 거리를 계산합니다.
+
+	Dijkstra dijkstra;
+	dijkstra.update(0);
+
+
+
+
 
 #pragma endregion
 
 
 
 
-
-
-		return 0;
-	}
+	return 0;
+}
