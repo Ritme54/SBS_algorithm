@@ -154,11 +154,82 @@ public:
 			cout << "\n";
 		}
 	}
+<<<<<<< Updated upstream
 
+=======
+	void insert(int vertex, int edge)
+	{
+	
+		adjacencyList[vertex].push_back(edge);
+		degree[edge]++;
+		cout << vertex << " : " << degree[edge] << endl;
+	}
+	
+	
+private:
+	int degree[SIZE];
+	bool visited[SIZE];
+	queue<int>queue;
+	vector<int> adjacencyList[SIZE];
+>>>>>>> Stashed changes
 };
 
+class backtracking
+{
+private:
+	int n;
+	vector<int> solution;
+	bool isValid[SIZE];
+public:
+	backtracking(int n) : n(n) // 생성자
+	{
+		solution.resize(n); // 백터의 크기를 n으로 설정
+		for (int i = 0; i < SIZE; i++)// 초기화
+		{
+			isValid[i] = true;
+		}
+	}
+
+	void search(int depth)
+	{
+		if (depth == n) // 깊이가 n에 도달하면 해답을 찾은 것
+		{
+			for (int i = 0; i < n; i++)
+			{
+				cout << solution[i] << " ";
+			}
+			cout << endl;
+			return;
+		}
+		for (int i = 0; i < SIZE; i++) // 가능한 모든 경우를 탐색
+		{
+			if (isValid[i]) // 유효한 경우인지 확인
+			{
+				solution[depth] = i; // 현재 깊이에 해당하는 값을 설정
+				isValid[i] = false; // 해당 값은 사용했으므로 유효하지 않게 설정
+				search(depth + 1); // 다음 깊이로 진행
+				isValid[i] = true; // 백트래킹: 이전 상태로 되돌림
 
 
+<<<<<<< Updated upstream
+=======
+			}
+			else // 유효하지 않은 경우
+			{
+				continue; // 다음 반복으로 넘어감
+			}
+
+
+		}
+
+	}
+
+
+
+};
+		
+
+>>>>>>> Stashed changes
 int main()
 {
 #pragma region 다익스트라 알고리즘
@@ -176,11 +247,48 @@ int main()
 
 
 
+<<<<<<< Updated upstream
+=======
+	//3.간선 제거 이후에 진입 차수가 0이 된 정점을 Queue에 삽입합니다.
+
+	//4. Queue가 비어있을 때까지 2번, 3번 작업을 반복합니다.
+
+	//Graph graph;
+	//graph.insert(1,2);
+	//graph.insert(1,5);
+	//graph.insert(2,3);
+	//graph.insert(3,4);
+	//graph.insert(4,6);
+	//graph.insert(5,6);
+	//graph.insert(6,7);
+>>>>>>> Stashed changes
 
 
 #pragma endregion
 
 
+<<<<<<< Updated upstream
+=======
+#pragma region 퇴각 검색(백트래킹 알고리즘) [숙제]
+
+	//퇴각 검색(Backtracking) : 문제를 해결하기 위해 가능한 모든 경우를 탐색하는 알고리즘입니다.
+	//해당 문제는 퇴각 검색을 통해 해결할 수 있습니다.
+	//시간 복잡도 : O(n!)
+	//1. 현재 상태에서 가능한 모든 경우를 탐색합니다.
+	//2. 각 경우에 대해 유효성을 검사합니다.
+	//3. 유효한 경우에 대해서만 다음 단계로 진행합니다.
+	//4. 모든 경우를 탐색하거나 유효하지 않은 경우가 발생하면 이전 단계로 되돌아갑니다.
+	//5. 최종적으로 원하는 해답을 찾습니다.
+
+	int n = 2; 
+	backtracking bt(n);
+	bt.search(1);
+	
+
+
+#pragma endregion
+
+>>>>>>> Stashed changes
 
 
 	return 0;
